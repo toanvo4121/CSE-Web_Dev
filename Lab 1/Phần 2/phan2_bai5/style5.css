@@ -1,0 +1,126 @@
+body {
+  background-image: url(./images03/bg-body.png);
+  background-color: #e8f7f9;
+  background-repeat: no-repeat;
+  margin: 0;
+  box-sizing: border-box;
+  background-position-x: center;
+}
+.container {
+  display: grid;
+  width: 700px;
+  height: 100%;
+  margin: 0 auto;
+  grid-template-rows: 140px 35px 1fr 100px;
+  background-color: #fff;
+}
+.header {
+  background-image: url(./images03/bg-header.jpg);
+}
+.header h1 {
+  color: #aaaaab;
+  font-style: italic;
+  font-weight: normal;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+.links {
+  background-image: url(./images03/bg-menu.png);
+  display: grid;
+  grid-template-columns: auto auto auto auto 1fr;
+}
+.link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 25px;
+}
+.link:hover {
+  background-image: url(./images03/bg-menu-hover.png);
+  background-repeat: no-repeat;
+}
+.content {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+}
+.adv {
+  background-image: url(./images03/bg-ad-top.png);
+  background-repeat: no-repeat;
+  height: 72px;
+}
+.paragraph {
+  margin-left: 10px;
+}
+.title {
+  color: #c1d34d;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+.time-post {
+  margin-top: -20px;
+  color: #e9e9e9;
+  text-shadow: 1px 1px 3px #000000;
+  font-weight: normal;
+}
+.comments {
+  display: grid;
+  grid-template-columns: 16px auto;
+  margin-bottom: 75px;
+}
+.cmt-icon {
+  background-image: url(./images03/icon-comment.png);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+.cmt-text {
+  margin: -5px 0 0 3px;
+  color: #99d3e4;
+  font-weight: normal;
+}
+.feed {
+  display: grid;
+  grid-template-rows: 25px 175px;
+  margin: 0 10px;
+}
+.live-feed-img {
+  background-image: url(./images03/bg-feed.gif);
+  background-color: #efefef;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.button-feed {
+  background-image: url(./images03/button-feed.png);
+  width: 100px;
+  height: 25px;
+  margin: 0 auto;
+}
+.links-feed {
+  background-color: #efefef;
+  padding-top: 15px;
+}
+.link-feed {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+  padding: 5px;
+}
+.sidebar-bottom {
+  background-image: url(./images03/bg-sidebar-bottom.gif);
+  background-repeat: no-repeat;
+}
+.footer {
+  background-image: url(./images03/bg-footer.jpg);
+}
+.footer p {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-left: 30px;
+  color: white;
+}

@@ -1,0 +1,38 @@
+@media (max-width: 992px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.accordion-button:hover {
+  background: #eeecec;
+}
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background: #d3d3d4;
+  color: #141619;
+}
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%);
+}
+.accordion-button:focus {
+  box-shadow: inherit;
+}
+.page-link {
+  color: #141619;
+}
+.page-link:hover {
+  background: #eeecec;
+  color: #141619;
+}
+.page-link:focus {
+  box-shadow: inherit;
+  background: #141619;
+  color: #eeecec;
+}
+footer .nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}
+footer .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
