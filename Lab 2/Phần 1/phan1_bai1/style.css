@@ -1,9 +1,8 @@
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .hide-on-mobile {
     display: none;
   }
 }
-
 .accordion-button:hover {
   background: #eeecec;
 }

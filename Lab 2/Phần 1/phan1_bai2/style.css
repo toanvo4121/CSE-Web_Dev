@@ -1,0 +1,37 @@
+@media (max-width: 1200px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 13px;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb-item a {
+  color: #141619;
+  text-decoration: none;
+}
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h4 {
+  font-weight: 700;
+}
+
+footer .nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}
+footer .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
