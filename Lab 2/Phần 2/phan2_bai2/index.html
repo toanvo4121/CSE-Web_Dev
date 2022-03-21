@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <div class="container-fluid">
+          <span
+            class="navbar-brand m-3 h1 d-flex justify-content-center"
+            style="font-size: 45px"
+            >Calculator</span
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- form -->
+    <div class="container my-5" style="width: 500px">
+      <div class="container d-flex justify-content-center mt-2">
+        <div
+          class="toast align-items-center text-white bg-dark border-0"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="d-flex">
+            <div class="toast-body" id="toast-msg"></div>
+            <button
+              type="button"
+              class="btn-close btn-close-white me-2 m-auto"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <div class="form-floating my-3">
+        <input
+          type="number"
+          class="form-control"
+          id="first-operand"
+          placeholder="0.0"
+        />
+        <label for="first-operand">First operand</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="second-operand"
+          placeholder="0.0"
+        />
+        <label for="second-operand">Second operand</label>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="operator">Select operator</label>
+        <select class="form-select" id="operator">
+          <option selected>Choose...</option>
+          <option value="add">Addition</option>
+          <option value="sub">Subtraction</option>
+          <option value="mul">Multiplication</option>
+          <option value="div">Division</option>
+          <option value="exp">Exponentiation</option>
+        </select>
+      </div>
+      <div class="d-grid">
+        <button
+          type="button"
+          class="btn btn-dark btn-lg"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          onclick="calculate()"
+        >
+          Calculate
+        </button>
+        <div class="collapse" id="collapseExample">
+          <h1 class="card card-body text-center" id="result"></h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
